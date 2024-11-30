@@ -1,0 +1,237 @@
+{
+	sceneFormatVersion: 1,
+	
+	// dates in unsigned 64-bit unix time
+	dateCreated:  0,
+	dateModified: 0,
+
+	// How many times this file was edited
+	changeNumber: 0,
+	
+	// nestedScenes: {
+	// 	// scene path here, relative to scene folder
+	// 	"door":
+	// 	{
+	// 		pos:   [0.0, 0.0, 0.0],
+	// 		ang:   [0.0, 0.0, 0.0],
+	// 		scale: [1.0, 1.0, 1.0],
+	// 	},
+	// },
+
+	// IDEAS:
+	// - Folder system to store entities in instead of having to make useless parent entities that will slow down the game, like visgroups
+	
+	entities: [
+		{
+			id:     1,
+			name:   "riverhouse",  // Optional Field
+			
+			pos:   [0.0, 0.0, 0.0],
+			ang:   [0.0, 0.0, 0.0],  // using angles instead of quaternions for easy editing, hopefully gimbal lock won't be an issue
+			scale: [1.0, 1.0, 1.0],
+
+			components:
+			{
+				"renderable":
+				{
+					// scaled to 0.0236111 size from source engine
+					path: "riverhouse/riverhouse_v1.obj",
+					
+					// Sorted by material index
+					// materials: [
+					// 	"path/to/custom/material.cmt",
+					// ],
+				},
+				"phys_object":
+				{
+					path: "riverhouse/riverhouse_v1.obj",
+					type: "mesh",
+
+					// physics object properties here
+				},
+			},
+		},
+		{
+			id:     100,
+			name:   "riverhouse2",  // Optional Field
+			
+			pos:   [100.0, 0.0, 0.0],
+			ang:   [90.0, 0.0, 0.0],  // using angles instead of quaternions for easy editing, hopefully gimbal lock won't be an issue
+			// scale: [1.0, 1.0, 1.0],
+			scale: [0.025373, 0.025373, 0.025373],
+
+			components:
+			{
+				"renderable":
+				{
+					// scaled to 0.025373 size from source engine
+					// path: "riverhouse/riverhouse_v1.obj",
+					path: "riverhouse/riverhouse_source_scale.obj",
+				
+					// Sorted by material index
+					// materials: [
+					// 	"path/to/custom/material.cmt",
+					// ],
+				},
+				//"phys_object":
+				//{
+				//	path: "riverhouse/riverhouse_v1.obj",
+				//	type: "mesh",
+//
+				//	// physics object properties here
+				//},
+			},
+		},
+		{
+			id:     2,
+			name:   "spawn_point",  // Optional Field
+			parent: 1, // Optional Field
+			
+			// pos:   [1133.0, -722.0, 272.0],
+			// ang:   [0.0, 0.0, 35.0],
+			pos:   [42.75, -52.5, 0.0],
+			ang:   [0.0, 0.0, 35.0],
+			scale: [1.0, 1.0, 1.0],
+			
+			components: {
+				"player_spawn": {},
+			},
+		},  
+		{
+			id:     3,
+			name:   "world_light",  // Optional Field
+			
+			pos:   [0, 0, 0],
+			ang:   [63.0, -35.0, 57.0],
+			scale: [1.0, 1.0, 1.0],
+			
+			components:
+			{
+				"light":
+				{
+					"type":  "world",
+					"color": [1, 0.794, 0.606, 1],
+				},
+			},
+		},
+
+		// FIX THIS LATER
+		// {
+		// 	id:     4,
+		// 	name:   "all_models",  // Optional Field
+		// 	parent: 1,
+		// 	
+		// 	pos:   [0.0, 0.0, 0.0],
+		// 	ang:   [0.0, 0.0, 0.0],  // using angles instead of quaternions for easy editing, hopefully gimbal lock won't be an issue
+		// 	scale: [1.0, 1.0, 1.0],
+		// 
+		// 	components:
+		// 	{
+		// 		"renderable":
+		// 		{
+		// 			path: "riverhouse/riverhouse_v1_models_only.obj",
+		// 		},
+		// 	},
+		// },
+		// {
+		// 	id:     5,
+		// 	name:   "light_floor_1",  // Optional Field
+		// 	
+		// 	pos:   [16.643, 11.429, 5.557],
+		// 	ang:   [0.0, 0.0, 0.0],  // using angles instead of quaternions for easy editing, hopefully gimbal lock won't be an issue
+		// 	scale: [1.0, 1.0, 1.0],
+		// 
+		// 	components:
+		// 	{
+		// 		"light":
+		// 		{
+		// 			"type":  "point",
+		// 			"color": [1, 0.794, 0.606, 10],
+		// 			"radius": 2.5,
+		// 		},
+		// 	},
+		// },
+		// {
+		// 	id:     6,
+		// 	name:   "light_floor_2",  // Optional Field
+		// 	
+		// 	pos:   [14.831, 10.384, 11.676],
+		// 	ang:   [0.0, 0.0, 0.0],  // using angles instead of quaternions for easy editing, hopefully gimbal lock won't be an issue
+		// 	scale: [1.0, 1.0, 1.0],
+		// 
+		// 	components:
+		// 	{
+		// 		"light":
+		// 		{
+		// 			"type":  "point",
+		// 			"color": [1, 0.794, 0.606, 10],
+		// 			"radius": 2.5,
+		// 		},
+		// 	},
+		// },
+		// {
+		// 	id:     7,
+		// 	name:   "light_floor_3",  // Optional Field
+		// 	
+		// 	pos:   [14.798, 18.658, 16.270],
+		// 	ang:   [0.0, 0.0, 0.0],  // using angles instead of quaternions for easy editing, hopefully gimbal lock won't be an issue
+		// 	scale: [1.0, 1.0, 1.0],
+		// 
+		// 	components:
+		// 	{
+		// 		"light":
+		// 		{
+		// 			"type":  "point",
+		// 			"color": [1, 0, 0, 10],
+		// 			"radius": 5,
+		// 		},
+		// 	},
+		// },
+		// {
+		// 	id:     8,
+		// 	name:   "chair",  // Optional Field
+		// 	
+		// 	pos:   [14.806, 16.802, 14.283],
+		// 	ang:   [0.0, 0.0, 179.000],  // using angles instead of quaternions for easy editing, hopefully gimbal lock won't be an issue
+		// 	scale: [1.0, 1.0, 1.0],
+		// 
+		// 	components:
+		// 	{
+		// 		"renderable":
+		// 		{
+		// 			path: "riverhouse/controlroom_chair001a.glb",
+		// 		},
+		// 		"phys_object":
+		// 		{
+		// 			path: "riverhouse/controlroom_chair001a_physics.glb",
+		// 			type: "convex",
+		// 		},
+		// 	},
+		// },
+
+		// causes jolt physics to crash
+		//{
+		//	id:     8,
+		//	name:   "chair",  // Optional Field
+		//	
+		//	pos:   [0, 0, 4.283],
+		//	ang:   [0.0, 0.0, 0.000],  // using angles instead of quaternions for easy editing, hopefully gimbal lock won't be an issue
+		//	scale: [1.0, 1.0, 1.0],
+		//
+		//	components:
+		//	{
+		//		"renderable":
+		//		{
+		//			path: "riverhouse/controlroom_chair001a.glb",
+		//		},
+		//		"phys_object":
+		//		{
+		//			path: "riverhouse/controlroom_chair001a_physics.obj",
+		//			type: "static_compound",
+		//			// motionType: "dynamic",
+		//		},
+		//	},
+		//},
+	],
+}
+

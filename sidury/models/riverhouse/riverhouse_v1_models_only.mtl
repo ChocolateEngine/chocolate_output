@@ -1,0 +1,82 @@
+# Blender 4.0.2 MTL File: 'riverhouse_v1.blend'
+# www.blender.org
+
+newmtl cagebulb01
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/sourceengine/archive/maps/riverhouse/vmf2obj/materials/models/props_c17/cagebulb01.tga
+
+newmtl cardboard_boxes001a
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/sourceengine/archive/maps/riverhouse/vmf2obj/materials/models/props_junk/cardboard_boxes001a.tga
+
+newmtl computer01
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/sourceengine/archive/maps/riverhouse/vmf2obj/materials/models/props_c17/computer01.tga
+
+newmtl controlroom_chair001a
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/sourceengine/archive/maps/riverhouse/vmf2obj/materials/models/props_wasteland/controlroom_chair001a.tga
+
+newmtl door01a
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/sourceengine/archive/maps/riverhouse/vmf2obj/materials/models/props_c17/door01a.tga
+
+newmtl light_domelight02_on
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/sourceengine/archive/maps/riverhouse/vmf2obj/materials/models/props_c17/light_domelight02_on.tga
+
+newmtl metalladder001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/sourceengine/archive/maps/riverhouse/vmf2obj/materials/models/props_c17/metalladder001.tga
+
+newmtl monitor02
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/sourceengine/archive/maps/riverhouse/vmf2obj/materials/models/props_lab/monitor02.tga

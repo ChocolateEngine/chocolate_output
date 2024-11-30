@@ -1,0 +1,4 @@
+{
+	shader:  "basic_3d",
+	diffuse: "models/riverhouse/woodfloor006a",
+}

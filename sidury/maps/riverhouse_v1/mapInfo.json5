@@ -1,0 +1,13 @@
+{
+    version: 1,
+    name:    "riverhouse",
+
+    primaryScene: "riverhouse",
+
+    skybox: "materials/skybox/sky_day01_01",
+
+    "scenes":
+    {
+        
+    },
+}
