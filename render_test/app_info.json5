@@ -1,0 +1,28 @@
+{
+	"name":        "render test",
+	"windowTitle": "render 3 test", // will probably remove this
+	
+	"searchPaths":
+	{
+		// "write": "$app_path$",
+
+		"binPaths":
+		[
+			"$app_path$/bin",
+			"$root_path$/bin",
+        ],
+
+		"paths":
+		[
+			"$app_path$",
+			"$root_path$/core",
+		],
+
+		"sourceAssets":
+		[
+			"$app_path$",
+			"$root_path$/core",
+		],
+	}
+}
+

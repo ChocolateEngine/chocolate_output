@@ -1,0 +1,18 @@
+"Floood's Linus World, same as VRChat world. Added by Floood-0867"
+{
+	"version" "1"
+	
+	"mapName" "linusworld"
+	
+	"modelPath" "models\linusworld\linusworld.obj"
+	
+	"ang"       "[0, 0, 0]"  // rotates the world model
+	"physAng"   "[0, 0, 0]"  // rotates the world model physics if needed
+	
+	"skybox" "materials/skybox/sky_day01_01"
+	
+	// should have this be an entity to be placed and handle spawning
+	"spawnPos" "[0, 0, 0]"
+	"spawnAng" "[0, -35, 0]"
+}
+
